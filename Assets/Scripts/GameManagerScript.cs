@@ -159,6 +159,7 @@ public class GameManagerScript : MonoBehaviour
         //Set random target rotation
         targetRotationSpeed = Random.Range(3f, 4f);
         if (Random.Range(0, 2) == 0) rotationDirecton = -1;
+        else rotationDirecton = 1;
 
         //Set knives quantity in UI
         GameObject _knife = AHS.knivesObject.GetComponentInChildren<Image>().gameObject;
